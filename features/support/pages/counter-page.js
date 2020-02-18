@@ -14,7 +14,7 @@ function select(selector) {
 }
 
 exports.counterPage = {
-  url: () => "http://localhost:3000/",
+  url: () => "http://localhost/",
   rootCounter: () => select("#rootCounter"),
   btnDecrease: () => select("#btnDecrease"),
   btnIncrease: () => select("#btnIncrease")
