@@ -17,9 +17,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test2": "react-scripts test",
     "eject": "react-scripts eject",
-    "test3": "testcafe chrome features\\step_definitions\\counter.js",
+    "test-centos": "./node_modules/.bin/cucumber-js  --world-parameters \"{\\\"browser\\\": \\\"chrome:headless\\\"}\"",
     "test": "./node_modules/.bin/cucumber-js.cmd",
     "test-report": "./node_modules/.bin/cucumber-js.cmd --format json:./reports/report.json",
     "test-chrome": "./node_modules/.bin/cucumber-js.cmd  --world-parameters \"{\\\"browser\\\": \\\"chrome\\\"}\"",
