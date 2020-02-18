@@ -28,8 +28,9 @@ pipeline {
         sh 'npm install cucumber -g'
         
         sh 'yarn install'
-        sh 'pm2 start server.js'
-        sh 'yarn test-centos'
+        sh 'yarn start'
+        // sh 'pm2 start server.js'
+        // sh 'yarn test-centos'
       }
     }
   }
