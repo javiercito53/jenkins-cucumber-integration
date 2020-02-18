@@ -5,7 +5,6 @@ function Counter(params) {
   const onDecrementClick = () => {
     saveCounter(counter - 1);
   };
-
   const onIncrementClick = () => {
     saveCounter(counter + 1);
   };
