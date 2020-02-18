@@ -29,9 +29,9 @@ pipeline {
         
         sh 'yarn install'
         sh 'yarn build'
-        sh 'yarn start'
-        // sh 'pm2 start server.js'
-        // sh 'yarn test-centos'
+        // sh 'yarn start'
+        sh 'pm2 start server.js'
+        sh 'yarn test-centos'
       }
     }
   }
