@@ -11,7 +11,7 @@ pipeline {
         sh 'yum upgrade -y'
         sh 'yum update -y'
 
-        sh 'yum install curl wget' 
+        sh 'yum install curl wget -y'
         sh 'curl -sL https://rpm.nodesource.com/setup_13.x | bash -'
         sh 'yum install nodejs -y'
 
