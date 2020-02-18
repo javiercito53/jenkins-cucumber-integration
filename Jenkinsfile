@@ -20,12 +20,12 @@ pipeline {
         sh 'yum install yarn -y'
 
         sh 'wget https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm'
-        sh 'yum install google-chrome-stable_current_x86_64.rpm'
+        sh 'yum install google-chrome-stable_current_x86_64.rpm -y'
 
         sh 'npm install pm2 -g'                
         sh 'pm2 -v'
 
-        sh 'npm install cucumber'
+        sh 'npm install cucumber -g'
         
         sh 'yarn install'
         sh 'pm2 start server.js'
