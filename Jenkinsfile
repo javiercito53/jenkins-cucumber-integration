@@ -8,8 +8,8 @@ pipeline {
   stages {
     stage('Build') {
       steps {        
-        sh 'npm install pm2 -g'
-        sh 'npm install cucumber -g'
+        sh 'npm install pm2'
+        sh 'npm install cucumber'
         sh 'npm install'
         sh 'pm2 start server.js'
         sh 'npm test-centos'
