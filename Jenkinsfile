@@ -9,7 +9,8 @@ pipeline {
     stage('Build') {
       steps {       
         echo "current build number: ${currentBuild.number}"
-        echo "My branch is ${GIT_LOCAL_BRANCH}"
+        def currentBranch = ${GIT_LOCAL_BRANCH}.split("/")[1]
+
 
         /*
         sh 'yum upgrade -y'
