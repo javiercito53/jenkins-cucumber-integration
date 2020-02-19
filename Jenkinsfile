@@ -7,15 +7,16 @@ pipeline {
   }
   stages {
     stage('Build') {
-      def branchName = getCurrentBranch()
-      def getCurrentBranch () {
-          return sh (
-              script: 'git rev-parse --abbrev-ref HEAD',
-              returnStdout: true
-          ).trim()
-      }      
-
       steps {
+        
+        def branchName = getCurrentBranch()
+        def getCurrentBranch () {
+            return sh (
+                script: 'git rev-parse --abbrev-ref HEAD',
+                returnStdout: true
+            ).trim()
+        }      
+
         
         echo 'My branch is' + branchName
         echo "current build number: ${currentBuild.number}"
