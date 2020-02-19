@@ -34,14 +34,16 @@ pipeline {
         sh 'yarn test-centos'
       }
     }
-    stage ('Generate HTML Reports') {
-      cucumber buildStatus: 'UNSTABLE',
-      fileIncludePattern: '**/*.json',
-      trendsLimit: 10,
-      classifications: [
-        'key': 'Browser',
-        'value': 'Firefox'
-      ]
+    stage('Generate HTML Reports') {
+      steps {
+        cucumber buildStatus: 'UNSTABLE',
+        fileIncludePattern: '**/*.json',
+        trendsLimit: 10,
+        classifications: [
+          'key': 'Browser',
+          'value': 'Firefox'
+        ]
+      }
     }
   }
 }
