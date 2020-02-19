@@ -10,6 +10,7 @@ pipeline {
       steps {
         echo "${BRANCH_NAME}"
         echo "current build number: ${currentBuild.number}"
+        
         /*
         sh 'yum upgrade -y'
         sh 'yum update -y'
