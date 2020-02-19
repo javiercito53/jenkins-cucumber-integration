@@ -9,7 +9,7 @@ pipeline {
     stage('Build') {
       steps {       
         echo "current build number: ${currentBuild.number}"
-        echo "current branch name: ${GIT_LOCAL_BRANCH.split("/")[1]}"
+        echo "current branch name: ${GIT_BRANCH.split("/")[1]}"
 
 
 
