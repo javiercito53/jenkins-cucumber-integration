@@ -8,7 +8,6 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo 'My branch is' + getCurrentBranch()
         echo "current build number: ${currentBuild.number}"
         
         /*
