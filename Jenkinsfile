@@ -9,7 +9,8 @@ pipeline {
     stage('Build') {
       steps {       
         echo "current build number: ${currentBuild.number}"
-        def currentBranch = ${GIT_LOCAL_BRANCH}.split("/")[1]
+        def currentBranch = ${GIT_LOCAL_BRANCH}.split("/")
+        echo "current branch: ${currentBranch[1]}
 
 
         /*
