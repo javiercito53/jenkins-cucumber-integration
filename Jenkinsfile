@@ -1,11 +1,3 @@
-def branchName = getCurrentBranch()
-def getCurrentBranch () {
-    return sh (
-        script: 'git rev-parse --abbrev-ref HEAD',
-        returnStdout: true
-    ).trim()
-}
-
 pipeline {
   agent {
     docker {
@@ -15,6 +7,15 @@ pipeline {
   }
   stages {
     stage('Build') {
+      node {
+        def branchName = getCurrentBranch()
+        def getCurrentBranch () {
+            return sh (
+                script: 'git rev-parse --abbrev-ref HEAD',
+                returnStdout: true
+            ).trim()
+        }      
+      }
       steps {
         
         echo 'My branch is' + branchName
