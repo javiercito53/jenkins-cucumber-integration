@@ -33,13 +33,7 @@ pipeline {
         sh 'pm2 start server.js'
         sh 'yarn test-centos'
         
-        cucumber buildStatus: 'UNSTABLE',
-        fileIncludePattern: '**/*.json',
-        trendsLimit: 10,
-        classifications: [
-          'key': 'Browser',
-          'value': 'Firefox'
-        ]
+        cucumber fileIncludePattern: '**/*.json'
       }
     }
   }
