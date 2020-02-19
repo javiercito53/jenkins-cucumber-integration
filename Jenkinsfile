@@ -32,10 +32,7 @@ pipeline {
         // sh 'yarn start'
         sh 'pm2 start server.js'
         sh 'yarn test-centos'
-      }
-    }
-    stage('Generate HTML Reports') {
-      steps {
+        
         cucumber buildStatus: 'UNSTABLE',
         fileIncludePattern: '**/*.json',
         trendsLimit: 10,
