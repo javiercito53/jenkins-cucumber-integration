@@ -42,7 +42,7 @@ pipeline {
 
 def getCurrentBranch () {
     return sh (
-        script: '/bin/git rev-parse --abbrev-ref HEAD',
+        script: '/usr/bin/git rev-parse --abbrev-ref HEAD',
         returnStdout: true
     ).trim()
 }      
