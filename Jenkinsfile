@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        echo ${BRANCH_NAME}
+        echo "${BRANCH_NAME}"
         echo "current build number: ${currentBuild.number}"
         /*
         sh 'yum upgrade -y'
