@@ -33,7 +33,7 @@ pipeline {
         sh 'pm2 start server.js'
         sh 'yarn test-centos'
         
-        cucumber fileIncludePattern: '**/*.json'
+        cucumber fileIncludePattern: '**/report.json'
       }
     }
   }

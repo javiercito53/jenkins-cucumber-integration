@@ -1,14 +1,10 @@
 /* eslint-disable no-undef */
 const { Given, When, Then } = require("cucumber");
-const { counterPage } = require("../support/pages/counter-page");
+
+const { counterPage } = require("../support/pages/CounterPage");
 /**
  * Scenario: showing 0 initially
  */
-Given(
-  "mount counter",
-  async () => await testController.navigateTo(counterPage.url())
-);
-
 When(
   "initially",
   async () =>
@@ -48,5 +44,5 @@ When(
 Then(
   "showing 1",
   async () =>
-    await testController.expect(counterPage.rootCounter().innerText).eql("1")
+    await testController.expect(counterPage.rootCounter().innerText).eql("-1")
 );

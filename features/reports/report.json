@@ -1,0 +1,261 @@
+[
+  {
+    "description": "    It displays an incrementing / decrementing counter starting at 0",
+    "keyword": "Feature",
+    "name": "Counter",
+    "line": 2,
+    "id": "counter",
+    "tags": [],
+    "uri": "features\\Counter.feature",
+    "elements": [
+      {
+        "id": "counter;showing-0-initially",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "showing 0 initially",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\core\\hooks.js:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7252000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "mount counter",
+            "match": {
+              "location": "features\\step_definitions\\backgrouds\\Navigation.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1879000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "initially",
+            "match": {
+              "location": "features\\step_definitions\\Counter.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 239000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "showing 0",
+            "match": {
+              "location": "features\\step_definitions\\Counter.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\core\\hooks.js:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\core\\hooks.js:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "counter;clicking---decrements",
+        "keyword": "Scenario",
+        "line": 10,
+        "name": "clicking - decrements",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\core\\hooks.js:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4966000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 11,
+            "name": "mount counter",
+            "match": {
+              "location": "features\\step_definitions\\backgrouds\\Navigation.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1172000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "clicking -",
+            "match": {
+              "location": "features\\step_definitions\\Counter.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 409000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "showing -1",
+            "match": {
+              "location": "features\\step_definitions\\Counter.js:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\core\\hooks.js:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\core\\hooks.js:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "counter;clicking-+-increments",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "clicking + increments",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\core\\hooks.js:77"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4513000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "mount counter",
+            "match": {
+              "location": "features\\step_definitions\\backgrouds\\Navigation.js:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 997000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "clicking +",
+            "match": {
+              "location": "features\\step_definitions\\Counter.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 420000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "showing 1",
+            "match": {
+              "location": "features\\step_definitions\\Counter.js:44"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3009000000,
+              "error_message": "Error: ExternalAssertionLibraryError {\n  code: 'E53',\n  isTestCafeError: true,\n  callsite: CallsiteRecord {\n    filename: 'C:\\\\Users\\\\MP748\\\\Documents\\\\JES\\\\Ambientes-prueba\\\\react-cucumber\\\\features\\\\step_definitions\\\\Counter.js',\n    lineNum: 46,\n    callsiteFrameIdx: 6,\n    stackFrames: [\n      [CallSite],\n      [CallSite],\n      [CallSite],\n      [CallSite],\n      [CallSite],\n      [CallSite],\n      [CallSite]\n    ],\n    isV8Frames: true\n  },\n  errMsg: \"AssertionError: expected '1' to deeply equal '-1'\"\n}\n    at Function.run (C:\\Users\\MP748\\Documents\\JES\\Ambientes-prueba\\react-cucumber\\node_modules\\cucumber\\lib\\user_code_runner.js:90:17)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\core\\hooks.js:101"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1000000,
+              "error_message": "TypeError: addErrorToController is not a function\n    at Object.<anonymous> (C:\\Users\\MP748\\Documents\\JES\\Ambientes-prueba\\react-cucumber\\features\\support\\core\\hooks.js:106:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "features\\support\\core\\hooks.js:91"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
