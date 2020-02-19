@@ -8,13 +8,14 @@ pipeline {
   stages {
     stage('Build') {
       steps {       
+        echo "current build number: ${currentBuild.number}"
+        echo "My branch is ${GIT_BRANCH}"
+
+        /*
         sh 'yum upgrade -y'
         sh 'yum update -y'
 
         sh 'yum install git curl wget -y'
-        echo "current build number: ${currentBuild.number}"
-        echo 'My branch is' + getCurrentBranch()
-        /*
         sh 'curl -sL https://rpm.nodesource.com/setup_13.x | bash -'
         sh 'yum install nodejs -y'
 
