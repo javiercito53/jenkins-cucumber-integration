@@ -7,7 +7,7 @@ pipeline {
   }
   stages {
     stage('Build') {
-      node {
+      node('prepare') {
         def branchName = getCurrentBranch()
         def getCurrentBranch () {
             return sh (
